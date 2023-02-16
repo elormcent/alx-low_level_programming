@@ -2,7 +2,7 @@
 
 /**
  * main - entry point
- * return: Always 0
+ * Return: Always 0 for success after printing with puts function
  */
 
 int main(void)
