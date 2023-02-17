@@ -5,35 +5,27 @@
  */
 int main(void)
 {
-	int c;
-	int d = 0;
+	int c, d;
+	int count;
 
-	while (d < 10)
+	for (c = 0; c < 10; c++)
 	{
-		c = 0;
-		while (c < 10)
+		count = c;
+		for (d = 0; d < 10; d++)
 		{
-			if (d != c && d < c)
+			if (count < d)
 			{
-				putchar('0' + d);
-				putchar('0' + c);
-
-				if (c + d != 17)
+				putchar(c % 10 + '0');
+				putchar(d % 10 + '0');
+				if (count != 8)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
-			c++;
 		}
-		d++;
 	}
 	putchar('\n');
+
 	return (0);
-}
-
-putchar('\n');
-
-return (0);
-
 }
