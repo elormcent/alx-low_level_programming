@@ -1,7 +1,7 @@
 #include"main.h"
 
 /**
- * a_z - a function that prints lowercas alphabet from a to z
+ * print_alphabet - a function that prints lowercas alphabet from a to z
  */
 
 void print_alphabet(void)
