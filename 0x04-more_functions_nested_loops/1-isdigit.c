@@ -6,10 +6,10 @@
  * Return: 1 digit or 0 for any
  */
 
-int _isdigit(int x)
+int _isdigit(int c)
 {
 
-	if (x > -1 && x < 10)
+	if (c > -1 && c < 10)
 	{
 	return (1);
 	}
