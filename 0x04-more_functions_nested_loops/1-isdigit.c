@@ -2,14 +2,14 @@
 
 /**
  * _isdigit - Check if a character is a digit
- * @x: The number to be checked
+ * @c: The number to be checked
  * Return: 1 digit or 0 for any
  */
 
 int _isdigit(int c)
 {
 
-	if (c > -1 && c < 10)
+	if (c >= 48 && c <= 57)
 	{
 	return (1);
 	}
