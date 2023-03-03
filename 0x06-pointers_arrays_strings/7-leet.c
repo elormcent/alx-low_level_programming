@@ -1,24 +1,27 @@
-i#include "main.h"
-/**
-  * leet - encodes a string into 1337
-  * @str: strings value
-  *
-  * Return: string value
-  */
-char *leet(char *str)
-{
-	int i;
-	int j;
-	char str1[] = "aAeEoOtTlL";
-	char str2[] = "4433007711";
+#include "main.h"
 
-	for (i = 0; str[i] != '\0'; i++)
+/**
+ * leet - encode string into 1337 leet
+ * @s: string to manipulate
+ * Return: string
+ */
+
+char *leet(char *s)
+{
+
+	int a[11] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
+	int b[11] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
+
+	int i, j;
+
+	for (j = 0; s[j] != '\0'; j++)
 	{
-		for (j = 0; j < 10; j++)
+		for (i = 0; a[i] != '\0'; i++)
 		{
-			if (str[i] == str1[j])
-				str[i] = str2[j];
+			if (s[j] == a[i])
+				s[j] = b[i];
 		}
 	}
-	return (str);
+
+	return (s);
 }
